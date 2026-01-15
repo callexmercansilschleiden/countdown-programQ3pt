@@ -1,17 +1,17 @@
-print("COUNTDOWN PROGRAM")  # Displays the program title
+print("COUNTDOWN PROGRAM")  # Program title
 
-start = int(input("Enter starting number: "))  # Gets the starting number from the user
+start = int(input("Enter starting number: "))  # Ask user for starting number
 
-print("\nCountdown begins:")  # Prints a message before the countdown starts
+print("\nCountdown begins:")  # Tell user countdown will start
 
-def countdown(n):  # Defines a function named countdown
-    if n > 0:  # Checks if n is greater than 0
-        print(n)  # Prints the current value of n
-        countdown(n - 1)  # Calls the function again with n decreased by 1
+def countdown(n):  # Function that counts down
+    if n > 0:  # Check if number is greater than zero
+        print(n)  # Print the current number
+        countdown(n - 1)  # Call function again with smaller number
 
-countdown(start)  # Starts the countdown using the user's input
+countdown(start)  # Call the function to start countdown
 
-print("Lift off!")  # Prints message after countdown finishes
+print("Lift off!")  # Message after countdown ends
 
-print("\nCountdown complete.")  # Indicates the countdown is complete
-print("Thank you for using this program.")  # Final message to the user
+print("\nCountdown complete.")  # Countdown finished
+print("Thank you for using this program.")  # Goodbye message
